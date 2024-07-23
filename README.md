@@ -16,4 +16,6 @@ UI/UX創新應用暨社群經營網站開發與實戰班
 ### [12 CSS 網頁切版術 - position 排版](https://docs.google.com/presentation/d/1y4eGj7x37aA-QePayDt5FnvkcWu3z_uMv2KAybVFGXU/edit?usp=sharing)
 ### [13 CSS 網頁切版術 - 綜合應用](https://docs.google.com/presentation/d/1Ylnq5hUXvmQTGg8VttfwoZLx0SZzcPUm1dBdJuMyMWg/edit?usp=sharing)
 ### [14 web 動畫技術應用與研究](https://docs.google.com/presentation/d/1sh851jgAk4PxVCUCJtvMtO67PMg4dY42MKlvmk3i-fk/edit?usp=sharing)
+### [15 了解 CSS 的前世今生](https://docs.google.com/presentation/d/1fJXxW2qg4PfScQq4_SvAz5tEoCPHpBD-tOR4evS2uIs/edit?usp=sharing)
+### [16 Tailwind CSS 學習指引](https://docs.google.com/presentation/d/1_ygspAzCxl0AihQTYE1pxJAkuNS9UkUgG_iurmrb21s/edit?usp=sharing)
 
