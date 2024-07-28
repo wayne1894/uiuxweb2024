@@ -18,4 +18,9 @@ UI/UX創新應用暨社群經營網站開發與實戰班
 ### [14 web 動畫技術應用與研究](https://docs.google.com/presentation/d/1sh851jgAk4PxVCUCJtvMtO67PMg4dY42MKlvmk3i-fk/edit?usp=sharing)
 ### [15 了解 CSS 的前世今生](https://docs.google.com/presentation/d/1fJXxW2qg4PfScQq4_SvAz5tEoCPHpBD-tOR4evS2uIs/edit?usp=sharing)
 ### [16 Tailwind CSS 學習指引](https://docs.google.com/presentation/d/1_ygspAzCxl0AihQTYE1pxJAkuNS9UkUgG_iurmrb21s/edit?usp=sharing)
-
+### [17 Javascript - 基本語法](https://docs.google.com/presentation/d/15DLaov48sI8cJe4xTaJ5jZpehA8szgcbwWbP70TTV14/edit?usp=sharing)
+### [18 Javascript - 生成藝術](https://docs.google.com/presentation/d/1mjz-X6ucxljeCfPUy1dx4GNT0P6i3nzw-5hLu5qPkyo/edit?usp=sharing)
+### [19 Javascript - function](https://docs.google.com/presentation/d/1qI8-Z0R0BZJ_BoadZWBV9SY2TLXgw1TjXJ0-LKyzJmA/edit?usp=sharing)
+### [20 Javascript - array](https://docs.google.com/presentation/d/1gSOFJ_hS_FjKfhv6GE71VH__PXlo-VAKSA0m-X6tOYk/edit?usp=sharing)
+### [21 Javascript - object ](https://docs.google.com/presentation/d/1TiZILDGhvjcjZ2ggBPlvx6y5Ky_cM27bWBb0pTj8V9Y/edit?usp=sharing)
+### [22 Javascript - 內建物件](https://docs.google.com/presentation/d/1_nYnisdMsaGvcRvr2V261YZhr9oPrie6OK672FGjZpM/edit?usp=sharing)

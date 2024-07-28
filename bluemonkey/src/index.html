@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bluemonkey</title>
+  <link rel="stylesheet" href="scss/main.scss">
+  <style>
+    .test{
+      padding:0 60px;
+      letter-spacing: 5px;
+      background-color: var(--primary);
+      margin: 0 auto;
+      text-align: center;
+      position: absolute;
+      z-index: 10;
+      cursor: pointer;
+      background-size: cover;
+    }
+    .test:hover{
+      background-color: red;
+      
+    }
+  </style>
+</head>
+<body>
+<header class="flex items-center bg-[#f6f8fd] h-[70px] px-[20px]">
+  <a class="flex items-center mr-[110px] gap-2" href="#">
+    <img class="h-[32px]" src="img/logo-teaching.png" alt="">
+    <span>線上開課工具!</span>
+  </a>
+  <input id="menu" type="checkbox" class="hidden">
+  <nav class="hidden absolute lg:block lg:static top-[70px] left-0 w-full lg:w-auto bg-[#f6f8fd] z-10">
+    <ul class="flex flex-col lg:flex-row gap-[20px] text-center">
+      <li><a class="block py-[10px]" href="#">線上開課工具</a></li>
+      <li><a class="block py-[10px]" href="#">功能特色</a></li>
+      <li><a class="block py-[10px]" href="#">方案費用</a></li>
+      <li><a class="block py-[10px]" href="#">客戶案例</a></li>
+      <li><a class="block py-[10px]" href="#">關於我們</a></li>
+      <li><a class="block py-[10px]" href="#">藍猴首頁</a></li>
+    </ul>
+  </nav>
+  <label for="menu" class="absolute right-[22px] lg:hidden cursor-pointer">
+    <img src="img/icon_bars.svg" alt="">
+  </label>
+
+  <a class="hidden lg:block ml-auto border-[2px] border-[#f7b157] py-2 px-5 rounded-full font-bold tracking-[3px] hover:bg-[linear-gradient(135deg,#f6d365,#fda085)]" href="#">FREE! 開通試用</a>
+</header>
+<main>
+  <section class="bg-[--primary]">
+    <div class="max-w-[--max-width] mx-auto text-center">
+      <img src="img/bg1.png" alt="">
+      <a class="bg-[--secondary] px-[96px] py-[10px] font-bold tracking-[8px] rounded-full border-[4px] border-white inline-block mb-6 relative" href="#">查看方案
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 absolute right-[8px] top-1/2 mt-[-8px]">
+          <path fill-rule="evenodd" d="M2 8c0 .414.336.75.75.75h8.69l-1.22 1.22a.75.75 0 1 0 1.06 1.06l2.5-2.5a.75.75 0 0 0 0-1.06l-2.5-2.5a.75.75 0 1 0-1.06 1.06l1.22 1.22H2.75A.75.75 0 0 0 2 8Z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+   <section class="bg-[--primary]">
+    <div class="max-w-[--max-width] mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <%for(var i=0;i<10;i++){%>
+        <div class="overflow-hidden rounded-2xl">
+          <div class="bg-[#ffde25] text-black text-[18px] py-2">美甲美妝業</div>
+          <div style="aspect-ratio: 16 / 9;" class="relative">
+            <a class="w-full h-full block" href="#">
+              <img class="w-full h-full object-cover"
+                src="https://ik.imagekit.io/thecodingpro/mike-school/tr:w-800,c-at_max/o/web%2F1698985575.aaaaaa?alt=media&token=e33f7a07-2d5e-49dc-b6af-eedc3e9a3952"
+                alt="">
+            </a>
+            <a href="#" class="bg-[red] text-white absolute top-0 left-0">募資優惠</a>
+          </div>
+          <div class="bg-white p-5">
+            <a href="#">no15class.com</a>
+            <p>與藍猴平台的溝通非常順暢，使用前清楚講解說明，使用後遇到問題快速協助，後台操作直觀容易理解，也持續擴增新功能，值得推薦!!</p>
+            <div class="flex items-center gap-3">
+              <img class="w-[40px] rounded-full" src="img/thead12.png" alt="">
+              <span>十五號藝術事業</span>
+            </div>
+          </div>
+        </div>
+        <%}%>
+     </div>
+    </div>
+   </section>
+
+
+
+   
+   
+   
+</main>
+</body>
+
+</html>
