@@ -8,28 +8,29 @@
   <title>bluemonkey</title>
   <link rel="stylesheet" href="scss/main.scss">
   <style>
-    .test{
-      padding:0 60px;
-      letter-spacing: 5px;
-      background-color: var(--primary);
-      margin: 0 auto;
-      text-align: center;
-      position: absolute;
-      z-index: 10;
-      cursor: pointer;
-      background-size: cover;
+    ._before{
+      position: relative;
     }
-    .test:hover{
+    ._before::before{
+      content: "apple";
+      display: block;
       background-color: red;
-      
+      font-size: 40px;
+      opacity: .9;
+      position: absolute;
+      top: -25px;
+      left: 25px;
+    }
+    ._before::after{
+      content: "banana";
     }
   </style>
 </head>
-<body>
+<body class="noto-sans-tc-500">
 <header class="flex items-center bg-[#f6f8fd] h-[70px] px-[20px]">
   <a class="flex items-center mr-[110px] gap-2" href="#">
     <img class="h-[32px]" src="img/logo-teaching.png" alt="">
-    <span>線上開課工具!</span>
+    <span class="txtJL">Online course starting tool!</span>
   </a>
   <input id="menu" type="checkbox" class="hidden">
   <nav class="hidden absolute lg:block lg:static top-[70px] left-0 w-full lg:w-auto bg-[#f6f8fd] z-10">
@@ -60,6 +61,64 @@
     </div>
   </section>
 
+  <section>
+    <div class="max-w-[--max-width] mx-auto">
+       <div class="flex flex-col md:flex-row mb-12 mt-4">
+         <%for(var i=0;i<3;i++){%>
+          <div class="flex-1 text-center">
+             <div class="text-[--primary] font-bold">
+               <span class="text-[32px] md:text-[40px] align-middle">3,988</span>
+               <span class="align-middle relative top-[-2px] left-[2px]">堂</span>
+             </div>
+             <p class="
+              text-[18px] 
+              tracking-[1px]
+              before:content-['+']
+              before:relative
+              before:-left-2
+              before:-top-[2px]
+              before:text-[--primary]
+              before:text-[18px]
+            ">開課數量</p>
+          </div>
+          <%}%>
+       </div>
+      <div class="flex flex-wrap gap-y-14 mb-10">
+        <%for(var i=0;i<6;i++){%>
+          <div class="flex flex-col md:flex-row w-1/2 md:w-1/3 px-[15px] gap-5">
+            <div class="md:w-[100px] w-[60%] mx-auto">
+              <img src="img/spec-img1.png" alt="">
+            </div>
+            <div class="flex-1">
+              <h3 class="text-center md:text-left text-[20px] font-bold text-[#484848] mb-3">個性化介面</h3>
+              <ul>
+                <li class="list-[circle] list-inside text-xl"><span class="text-base -ml-1">首頁
+                    <b class="
+                        relative
+                        before:content-['']
+                        before:h-[10px]
+                        before:w-full
+                        before:bg-[--secondary]
+                        before:absolute
+                        before:left-0
+                        before:bottom-0
+                        before:-z-10
+                        before:block
+                     "
+                    >版型切換</b>(七大區塊皆可換)</span></li>
+                <li class="list-[circle] list-inside text-xl"><span class="text-base -ml-1">自訂品牌Logo</span></li>
+                <li class="list-[circle] list-inside text-xl"><span class="text-base -ml-1">開放CSS編輯</span></li>
+                <li class="list-[circle] list-inside text-xl"><span class="text-base -ml-1">增加自訂頁面</span></li>
+                <li class="list-[circle] list-inside text-xl"><span class="text-base -ml-1">部落格文章系統</span></li>
+              </ul>
+            </div>
+          </div>  
+        <%}%>
+      </div>
+
+    </div>
+  </section>
+
    <section class="bg-[--primary]">
     <div class="max-w-[--max-width] mx-auto px-4">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
@@ -87,12 +146,6 @@
      </div>
     </div>
    </section>
-
-
-
-   
-   
-   
 </main>
 </body>
 
