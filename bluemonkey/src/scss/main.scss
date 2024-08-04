@@ -100,3 +100,14 @@
       transform: rotate(0deg);
   }
 }
+
+#navbar-example2 a.active{
+    color: var(--primary);
+}
+
+.accordion-collapse.collapse{
+    visibility:inherit;
+}
+#myTab .active{
+    background-color: red;
+}

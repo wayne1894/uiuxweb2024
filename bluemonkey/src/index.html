@@ -6,50 +6,14 @@
   <link rel="icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>bluemonkey</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="scss/main.scss">
-  <style>
-    ._before{
-      position: relative;
-    }
-    ._before::before{
-      content: "apple";
-      display: block;
-      background-color: red;
-      font-size: 40px;
-      opacity: .9;
-      position: absolute;
-      top: -25px;
-      left: 25px;
-    }
-    ._before::after{
-      content: "banana";
-    }
-  </style>
 </head>
 <body class="noto-sans-tc-500">
-<header class="flex items-center bg-[#f6f8fd] h-[70px] px-[20px]">
-  <a class="flex items-center mr-[110px] gap-2" href="#">
-    <img class="h-[32px]" src="img/logo-teaching.png" alt="">
-    <span class="txtJL _animate-hover-shine">Online course starting tool!</span>
-  </a>
-  <input id="menu" type="checkbox" class="hidden">
-  <nav class="hidden absolute lg:block lg:static top-[70px] left-0 w-full lg:w-auto bg-[#f6f8fd] z-10">
-    <ul class="flex flex-col lg:flex-row gap-[20px] text-center">
-      <li><a class="block py-[10px]" href="#">線上開課工具</a></li>
-      <li><a class="block py-[10px]" href="#">功能特色</a></li>
-      <li><a class="block py-[10px]" href="#">方案費用</a></li>
-      <li><a class="block py-[10px]" href="#">客戶案例</a></li>
-      <li><a class="block py-[10px]" href="#">關於我們</a></li>
-      <li><a class="block py-[10px]" href="#">藍猴首頁</a></li>
-    </ul>
-  </nav>
-  <label for="menu" class="absolute right-[22px] lg:hidden cursor-pointer">
-    <img src="img/icon_bars.svg" alt="">
-  </label>
-  <a class="hidden lg:block ml-auto border-[2px] border-[#f7b157] py-2 px-5 rounded-full font-bold tracking-[3px] hover:bg-[linear-gradient(135deg,#f6d365,#fda085)]" href="#">FREE! 開通試用</a>
-</header>
-<main>
-  <section class="bg-[--primary]">
+<div id="to_top"></div>
+<%- include("include/header")%>
+<main class="pt-[70px]" data-bs-spy="scroll" data-bs-target="#navbar-example2">
+  <section id="section1" class="bg-[--primary]">
     <div class="max-w-[--max-width] mx-auto text-center">
       <img src="img/bg1.png" alt="">
       <a class="_animate-btn-click bg-[--secondary] px-[96px] py-[10px] font-bold tracking-[8px] rounded-full border-[4px] border-white inline-block mb-6 relative" href="#">查看方案
@@ -60,7 +24,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="section2">
     <div class="max-w-[--max-width] mx-auto">
        <div class="flex flex-col md:flex-row mb-12 mt-4">
          <%for(var i=0;i<3;i++){%>
@@ -118,7 +82,7 @@
     </div>
   </section>
 
-   <section class="bg-[--primary]">
+   <section id="section3" class="bg-[--primary]">
     <div class="max-w-[--max-width] mx-auto px-4">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         <%for(var i=0;i<10;i++){%>
@@ -132,7 +96,7 @@
             </a>
             <a href="#" class="bg-[red] text-white absolute top-0 left-0">募資優惠</a>
           </div>
-          <div class="bg-white p-5">
+          <div class="bg-white !p-5">
             <a href="#">no15class.com</a>
             <p>與藍猴平台的溝通非常順暢，使用前清楚講解說明，使用後遇到問題快速協助，後台操作直觀容易理解，也持續擴增新功能，值得推薦!!</p>
             <div class="flex items-center gap-3">
@@ -145,7 +109,16 @@
      </div>
     </div>
    </section>
+
+<div class="w-[100px] h-[100px] fixed right-5 bottom-5 bg-[red]">
+  <a href="#to_top">To Top</a>
+  <a href="#section2">section2</a>
+</div>
 </main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
